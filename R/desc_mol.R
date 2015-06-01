@@ -7,10 +7,10 @@ desc_mol <- function(structure_id){
   xml_txt <- htmlParse(url_path)
   xml_pdb <- getNodeSet(xml_txt, '//structureid')
 
-  out <- sapply(xml_pdb, function(x){
+  out <- ldply(xml_pdb, function(x){
     structure_id <- xmlAttrs(x)
     polymer <- xmlChildren(x)
-    polymer_list <- sapply(polymer, function(y){
+    polymer_list <- ldply(polymer, function(y){
       polymer_attr <- xmlAttrs(y)
       polymer_entitynr <- polymer_attr['entitynr']
       polymer_length <- polymer_attr['length']
@@ -41,7 +41,7 @@ desc_mol <- function(structure_id){
     polymer_list
   })
 #  cc <- do.call('rbind', out)
- out
+ out #<- as.data.frame(out)
 
 }
 
