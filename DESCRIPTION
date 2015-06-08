@@ -1,10 +1,11 @@
 Package: RCSB.pdb
 Type: Package
-Title: What the Package Does (Title Case)
-Version: 0.1
+Title: An interface of R to the RCSB pdb database
+Version: 0.1.1
 Date: 2015-05-28
-Author: Who wrote it
-Maintainer: Who to complain to <yourfault@somewhere.net>
-Description: More about what it does (maybe more than one line)
-License: What license is it under?
+Author: Pidong Li, Xinyu Bai, Jinlong Ru
+Maintainer: Pidong Li <hope-dream@163.com>
+Description: An interface of R to the RCSB pdb database(http://www.rcsb.org/)
+License: GPL
+Imports: XML
 LazyData: TRUE

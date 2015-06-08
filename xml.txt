@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<orgPdbQuery>
+<version>B0907</version>
+<queryType>org.pdb.query.simple.ExpTypeQuery</queryType>
+<description>Experimental Method Search : Experimental Method=SOLID-STATE NMR</description>
+<mvStructure.expMethod.value>SOLID-STATE NMR</mvStructure.expMethod.value>
+</orgPdbQuery>

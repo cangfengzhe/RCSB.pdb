@@ -25,6 +25,8 @@ openFileInOS <- function(f) {
 }
 
 check_current <- function(structure_id, has_chain = F){
+ # devtools::use_data(current_pdb, internal = T)
+  data(current_pdb, envir=environment())
   if(has_chain == T){
     structure_id <- do.call('rbind',strsplit(structure_id, split = '\\.'))
     structure_id[,1] <- toupper(structure_id[, 1])
